@@ -22,6 +22,15 @@ Demo 使用 React、TypeScript 和 Vite，展示业务工作台、RAG 检索、W
 
 商业化训练口径：首年内部成本 274,000 元，训练报价区间 361,680～460,320 元。该区间高于合成访谈的 250,000 元首期预算上限，且保守收益假设下首年 ROI 为负，因此只支持受控验证，不构成正式报价或采购建议。
 
+## 开源协作记录
+
+互评项目：[`Mireya-mm/talent-dispatch-1105`](https://github.com/Mireya-mm/talent-dispatch-1105)（MIT License）。
+
+- [Issue #3：token 校验失败后登录流程读取空用户并崩溃](https://github.com/Mireya-mm/talent-dispatch-1105/issues/3)：记录线上复现环境、接口响应、代码原因和修复边界。
+- [PR #4：处理登录初始化期间的 token 失效](https://github.com/Mireya-mm/talent-dispatch-1105/pull/4)：仅修改 `index.html`，增加 4 行状态保护与明确提示；已验证 token 失效和正常登录两条模拟路径。
+
+PR 当前等待仓库维护者审核，尚未合并。修复范围是前端空值崩溃与误导性提示，不包含线上 token 签名配置本身。
+
 ## 作业 1：开源项目介绍与许可证测试方案
 
 - **测试对象**：[代码仓鼠 · Repo Hamster](https://github.com/hahaaa520/kiro-repo-hamster)
